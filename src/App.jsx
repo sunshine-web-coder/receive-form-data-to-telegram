@@ -1,13 +1,7 @@
-import React, { useState } from "react";
-
-// const botToken = "6246708004:AAHLmuFTdvTT1yO194d1paSt43fmgOy98J4";
-// const chain_id = "5697922502";
+import { useState } from "react";
 
 const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
 const chain_id = import.meta.env.VITE_TELEGRAM_CHAT_ID;
-
-// const botToken = JSON.stringify(import.meta.env.VITE_TELEGRAM_BOT_TOKEN);
-// const chain_id = JSON.stringify(import.meta.env.VITE_TELEGRAM_CHAT_ID);
 
 function ContactForm() {
   const [name, setName] = useState("");
